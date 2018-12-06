@@ -36,7 +36,7 @@ package easy;
  **/
 public class LC26_RemoveDuplicatesFromSortedArray {
     /**
-     * @Description: 
+     * @Description: 两次遍历， 一次遍历找重, 一次遍历位移， 时间复杂度为O(n ^ 2)；
      * @Param: [nums]
      * @Return: int 
      */
@@ -58,9 +58,26 @@ public class LC26_RemoveDuplicatesFromSortedArray {
                 len--;
             }
         }
+
         return nums.length - length;
     }
 
+    /**
+     * @Description: 双指针法。时间复杂度为O(n), 14 ms, 在Remove Duplicates from Sorted Array的Java提交中击败了69.22% 的用户
+     * @Param: [nums]
+     * @Return: int
+     */
+    public int removeDuplicatesTrue(int[] nums) {
+        int slow = 0;
+
+        for (int i = 1; i < nums.length; i++) {
+            if(nums[i] != nums[slow]) {
+                slow++;
+                nums[slow] = nums[i];
+            }
+        }
+        return slow + 1;
+    }
     /**
      * @Description: asd
      * @Param: [args] 

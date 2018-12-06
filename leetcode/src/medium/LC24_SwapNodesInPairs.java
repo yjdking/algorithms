@@ -31,7 +31,7 @@ public class LC24_SwapNodesInPairs {
     }
 
     /**
-     * @Description: 5 ms, 在Swap Nodes in Pairs的Java提交中击败了39.43% 的用户
+     * @Description: 5 ms, 在Swap Nodes in Pairs的Java提交中击败了39.43% 的用户。
      * @Param: [head]
      * @Return: medium.LC24_SwapNodesInPairs.ListNode
      */

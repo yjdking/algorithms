@@ -16,9 +16,9 @@ package medium;
 
 import java.util.Scanner;
 
-/**
- * @ClassName: LC3_LongestSubstringWithoutRepeatingCharacters
- * @Description: 给定一个字符串，找出不含有重复字符的最长子串的长度。
+/**LC3_LongestSubstringWithoutRepeatingCharacters
+ * @Description: 给定一个字符串，找出不含有重复字符的最长子串的长度
+ * @ClassName: 。
  * @Author: 余佳东
  * @Date: 2018-11-16 21:24
  * @Version: V1.0
